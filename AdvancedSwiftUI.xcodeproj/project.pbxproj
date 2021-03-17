@@ -11,6 +11,13 @@
 		2BA86CF0260202B000E66827 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA86CEF260202B000E66827 /* ContentView.swift */; };
 		2BA86CF2260202B100E66827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA86CF1260202B100E66827 /* Assets.xcassets */; };
 		2BA86CF5260202B100E66827 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA86CF4260202B100E66827 /* Preview Assets.xcassets */; };
+		2BA86D2C260218EE00E66827 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA86D2B260218EE00E66827 /* CustomButtonStyle.swift */; };
+		2BA86D3026021BC800E66827 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA86D2F26021BC800E66827 /* BlurView.swift */; };
+		2BA86D3526021D0F00E66827 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA86D3426021D0F00E66827 /* MapView.swift */; };
+		2BA86D3826021DCA00E66827 /* InterfacingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA86D3726021DCA00E66827 /* InterfacingView.swift */; };
+		2BA86D3C2602211C00E66827 /* AnimatedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA86D3B2602211C00E66827 /* AnimatedBackground.swift */; };
+		2BA86D3F260226B100E66827 /* GridVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA86D3E260226B100E66827 /* GridVerticalView.swift */; };
+		2BA86D4326022E3300E66827 /* GridHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA86D4226022E3300E66827 /* GridHorizontalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		2BA86CF1260202B100E66827 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BA86CF4260202B100E66827 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2BA86CF6260202B100E66827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BA86D2B260218EE00E66827 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
+		2BA86D2F26021BC800E66827 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		2BA86D3426021D0F00E66827 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		2BA86D3726021DCA00E66827 /* InterfacingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfacingView.swift; sourceTree = "<group>"; };
+		2BA86D3B2602211C00E66827 /* AnimatedBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBackground.swift; sourceTree = "<group>"; };
+		2BA86D3E260226B100E66827 /* GridVerticalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridVerticalView.swift; sourceTree = "<group>"; };
+		2BA86D4226022E3300E66827 /* GridHorizontalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridHorizontalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +67,15 @@
 			isa = PBXGroup;
 			children = (
 				2BA86CED260202B000E66827 /* AdvancedSwiftUIApp.swift */,
+				2BA86D3226021BE400E66827 /* Interfacing UIKit */,
 				2BA86CEF260202B000E66827 /* ContentView.swift */,
 				2BA86CF1260202B100E66827 /* Assets.xcassets */,
 				2BA86CF6260202B100E66827 /* Info.plist */,
 				2BA86CF3260202B100E66827 /* Preview Content */,
+				2BA86D2B260218EE00E66827 /* CustomButtonStyle.swift */,
+				2BA86D3726021DCA00E66827 /* InterfacingView.swift */,
+				2BA86D4126022E1D00E66827 /* Grids */,
+				2BA86D3B2602211C00E66827 /* AnimatedBackground.swift */,
 			);
 			path = AdvancedSwiftUI;
 			sourceTree = "<group>";
@@ -67,6 +86,24 @@
 				2BA86CF4260202B100E66827 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2BA86D3226021BE400E66827 /* Interfacing UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				2BA86D2F26021BC800E66827 /* BlurView.swift */,
+				2BA86D3426021D0F00E66827 /* MapView.swift */,
+			);
+			path = "Interfacing UIKit";
+			sourceTree = "<group>";
+		};
+		2BA86D4126022E1D00E66827 /* Grids */ = {
+			isa = PBXGroup;
+			children = (
+				2BA86D3E260226B100E66827 /* GridVerticalView.swift */,
+				2BA86D4226022E3300E66827 /* GridHorizontalView.swift */,
+			);
+			path = Grids;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +176,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BA86CF0260202B000E66827 /* ContentView.swift in Sources */,
+				2BA86D3C2602211C00E66827 /* AnimatedBackground.swift in Sources */,
+				2BA86D3F260226B100E66827 /* GridVerticalView.swift in Sources */,
+				2BA86D3026021BC800E66827 /* BlurView.swift in Sources */,
+				2BA86D3526021D0F00E66827 /* MapView.swift in Sources */,
 				2BA86CEE260202B000E66827 /* AdvancedSwiftUIApp.swift in Sources */,
+				2BA86D2C260218EE00E66827 /* CustomButtonStyle.swift in Sources */,
+				2BA86D4326022E3300E66827 /* GridHorizontalView.swift in Sources */,
+				2BA86D3826021DCA00E66827 /* InterfacingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
